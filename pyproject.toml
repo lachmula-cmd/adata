@@ -1,0 +1,20 @@
+[project]
+name = "brain-fm"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "lachmula-cmd", email = "ma2609@sussex.ac.uk" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "anndata>=0.13.4",
+    "pandas>=3.1.0",
+]
+
+[project.scripts]
+brain-fm = "brain_fm:main"
+
+[build-system]
+requires = ["uv_build>=0.13.2,<0.14.0"]
+build-backend = "uv_build"
